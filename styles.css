@@ -1,0 +1,280 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2000;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.link-items {
+  margin-right: 20px;
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+.fa {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+.fa:hover {
+  color: cyan;
+}
+.link-items:last-child {
+  margin-right: 0;
+}
+header {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.samsung.com/is/image/samsung/assets/za/smartphones/galaxy-a-series/01_1_KV_Animate_PC.jpg?$ORIGIN_JPG$");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.CFA-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 50%;
+  padding: 0 20px;
+}
+.CFA-text {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  line-height: 40px;
+}
+.CFA-button {
+  text-decoration: none;
+  background-color: cyan;
+  border: none;
+  padding: 10px 20px;
+  color: orange;
+}
+.Sign-up:hover {
+  background-color: cyan;
+  color: grey;
+}
+
+.u-small-margin-top {
+  margin-top: 20px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.msa {
+  display: flex;
+  align-items: center;
+}
+
+.Sign-up {
+  background-color: #555;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: relative;
+  bottom: -10px;
+  right: 1px;
+  width: 280px;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.bar {
+  width: 70%;
+  height: 3px;
+  background-color: chocolate;
+  transform: translate(-50%, -2400%);
+}
+body {
+  font-family: Arial black;
+}
+.msa ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.msa ul li {
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+.msa ul li:nth-child(1) {
+  color:deeppink;
+  font-size: xx-large;
+}
+.msa ul li:nth-child(2) {
+  color: yellow;
+  font-size: xx-large;
+}
+.msa ul li:nth-child(3) {
+  color: skyblue;
+  font-size: xx-large;
+}
+.box {
+  background: lightgrey;
+  padding: 1em;
+  box: shadow 100px 200px 100px;
+  border: 2px solid cyan;
+  border-radius: 100px;
+}
+h1 {
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  text-decoration: underline;
+}
+.container {
+  background: cyan;
+  padding: 1.5em;
+  box: shadow 100px 200px 100px;
+}
+.search-box {
+  position: absolute;
+  background: cyan;
+  transform: translate(7000%, -240%);
+  font-size: 20px;
+}
+.grid {
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.grid-item {
+  position: relative;
+  background-color: violet;
+}
+.product-info {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 100%;
+
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 10px;
+  color: white;
+}
+
+.scrolling-active {
+  background-color: cyan;
+}
+.section-1 {
+  padding: 50px 10px;
+}
+.section-2 {
+  padding: 100px;
+}
+.flex-box{
+  display: flex;
+}
+.flexbox-item{
+  width: 200px;
+  margin: 10px;
+  border: 3px solid  grey;
+  background-color: cadetblue;
+}
+.box-1{
+  min-height: auto;
+}
+.box-2{
+  min-height: auto;
+}
+.box-3{
+  min-height: auto;
+  }
+ @media all and (max-width: 500px) {
+   body{
+     color: crimson;
+   } 
+ }
+@media all and (max-width: 400px ){
+  .CFA-text {
+    font-style: oblique;
+    font-size: 12px;
+    font-weight: 400;
+    color: burlywood;
+    line-height: 10px;
+  }
+  .CFA-button {
+    text-decoration: none;
+    background-color: cyan;
+    border: none;
+    font-size: 7px;
+    color: white;
+  }
+  
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  .product-info {
+    position: absolute;
+    font-size: 13px;
+    top: 80%;
+    transform: translateY(-50%);
+    width: 100%;
+  
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 10px;
+    color: white;
+  }
+  }
+.link-items {
+  margin-right: 10px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  }
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-right: 1px;
+  }
+
+.msa ul li {
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  }
+  @media all and (max-width: 800px ){
+    header {
+      position: relative;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url("https://images.samsung.com/is/image/samsung/assets/za/smartphones/galaxy-a-series/01_1_KV_Animate_PC.jpg?$ORIGIN_JPG$");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 27vh;
+    }
+}

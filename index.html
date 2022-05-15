@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Msa</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="msa">
+          <div class="logo">
+            <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+          </div>
+          <ul>
+            <li>m</li>
+            <li>s</li>
+            <li>a</li>
+          
+          </ul>
+        </div>
+        <ul class="nav-links">
+          <li class="link-items">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+          </li>
+          <li class="link-items">
+            <a href="#"><i class="fa fa-user-o"></i></a>
+          </li>
+          <li class="link-items">
+            <a class="search-btn" href="#"><i class="fa fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="CFA-container">
+        <p class="CFA-text">
+          Get 10% off for your first buy. T&C's apply
+        </p>
+        <button class="Sign-up" onclick="openForm()">Sign up</button>
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Sign up</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+    </header>
+
+    <section class="section-1">
+      <div class="grid">
+        <div class="grid-item grid-item-1">
+          <img
+            src="https://images.ctfassets.net/8cd2csgvqd3m/3zMbwPFhHDHkbq31CIjGdg/0e3d357d10844f4a72592ddd82bd98ca/HX_Timber_Hero.png?q=90&fm=webp&w=720&h=720&fit=fill"
+            alt=""
+          />
+          <div class="product-info">
+            <p class="info">HX Headphones</p>
+            <button class="CFA-button u-small-margin-top">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="grid-item grid-item-2">
+          <img
+            src="https://img.global.news.samsung.com/global/wp-content/uploads/2017/01/Notebook-Odyssey_main_1.jpg"
+            alt=""
+          />
+          <div class="product-info">
+            <p class="info">Samsung Notebook</p>
+            <button class="CFA-button u-small-margin-top">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="grid-item grid-item-3">
+          <img
+            src="https://www.hirschs.co.za/media/catalog/product/cache/5650c527889287cec4d241f33ee3fa4b/7/4/74050.jpg"
+            alt="#"
+          />
+          <div class="product-info">
+            <p class="info">iPad 15 inch</p>
+            <button class="CFA-button u-small-margin-top">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="grid-item grid-item-4">
+          <img
+            src="https://img.money.com/2021/06/Shopping-DJI-Air-2S-Drone.jpg?quality=60"
+            alt="#"
+          />
+          <div class="product-info">
+            <p class="info">DJI-Air-2S-Drone</p>
+            <button class="CFA-button u-small-margin-top">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="grid-item grid-item-5">
+          <img
+            src="https://img.joomcdn.net/e6f6ac39feaee0948419883c468e235df99860f9_original.jpeg"
+            alt="#"
+          />
+          <div class="product-info">
+            <p class="info">Smart Watch</p>
+            <button class="CFA-button u-small-margin-top">Add to cart</button>
+          </div>
+        </div>
+        <div class="grid-item grid-item-6">
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/I/71z7ztyH1LL._AC_SL1500_.jpg"
+            alt="#"
+          />
+          <div class="product-info">
+            <p class="info">Mid Grinder Gaming Machine</p>
+            <button class="CFA-button u-small-margin-top">Add to cart</button>
+          </div>
+        </div>
+    </section>
+    <section class="section-2">
+      <div class="flex-box">
+        <h2>On Promotion</h2>
+        <div class="flexbox-item box-1">
+          <img src="https://www.gizmochina.com/wp-content/uploads/2020/03/Huawei-P40-500x500.jpg" alt="#"
+          />
+        </div>
+        <div class="flexbox-item box-2">
+          <img src="https://img.joomcdn.net/8968a0e408d797e9665cd48e4d3c36543d14aa62_original.jpeg" alt="#"
+          />
+        </div>
+        <div class="flexbox-item box-3">
+          <img src="https://images-eu.ssl-images-amazon.com/images/I/61BsDS7kk7S.__AC_SX300_SY300_QL70_ML2_.jpg" alt="#"
+          />
+        </div>
+        <div class="flexbox-item box-4">
+          <img src="https://www.istore.co.za/media/catalog/product/i/p/iphone_13_pro_green_pdp_image_position-1a__wwen.jpg_8.png?format=jpeg" alt="#"
+          />
+        </div>
+      </div>
+    </div>
+    </section>
+    <script>
+      console.log("yep");
+      window.addEventListener("scroll", function () {
+        let navBar = document.querySelector(".nav-bar");
+
+        navBar.classList.toggle("scrolling-active", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>

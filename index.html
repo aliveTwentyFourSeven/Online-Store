@@ -30,13 +30,14 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <i class="bi bi-cart-fill" style="font-size: 2rem"></i>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-info bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal"><i type="icon" class="bi bi-person-fill" style="font-size: 2rem" data-bs-toggle="model" data-bs-target="#exampleModal"></i></button>
-                    </li>
-                    <li class="nav-item">
                         <i class="bi bi-search" style="font-size: 2rem"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-info bg-transparent shadow-none" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                type="icon" class="bi bi-person-fill" style="font-size: 2rem"></i></button>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bi bi-cart-fill" style="font-size: 2rem"></i>
                     </li>
                 </ul>
             </div>
@@ -62,6 +63,46 @@
             </div>
         </div>
         </div>
+         <!-- Button trigger modal -->
+        <!-- Modal1 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="fw-bold fs-2 modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row mb-3">
+                              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                              <div class="col-sm-7">
+                                <input type="email" class="form-control" id="inputEmail3">
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                              <div class="col-sm-7">
+                                <input type="password" class="form-control" id="inputPassword3">
+                              </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                  <label class="form-check-label" for="autoSizingCheck">
+                                    Remember me
+                                  </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </section>
     
@@ -75,7 +116,7 @@
                 <!-- <div class="d-sm-flex">  We could add "sm" to maintain flexbox on small screen-->
                 <!-- #Bootstrap making a flexbox THIS PART ALINGS THE h1 and img tag side by side"  -->
                 <div>
-                    <h1 class="fw-bold" >Get 10% off for your first <span class="text-warning">buy. T&C's apply</span></h1>
+                    <h1 class="fw-bold" >Get 10% off for your first <span class="text-info">buy. T&C's apply</span></h1>
                     <button class="btn btn-info btn-lg">DAILY DEALS</button>
                     <!-- the above tag has btn-primary which makes the button to be dark blue #Check on Customize->Components for more traits -->
                     <!--btn-lg sets the size of the button a little bit bigger-->
@@ -99,46 +140,45 @@
                     <input type="text"
                            class="form-control"
                            placeholder="Enter Email" />
-                    <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#Modal">
                         Sign up
                     </button>
                 </div>
-
             </div>
         </div> 
         <!-- Button trigger modal -->
         <!-- Modal1 -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="fw-bold fs-2 modal-title" id="exampleModalLabel">Login</h5>
+                        <h5 class="fw-bold fs-2 modal-title" id="ModalLabel">Sign Up</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form>
                             <div class="row mb-3">
-                              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                              <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
                               <div class="col-sm-7">
                                 <input type="email" class="form-control" id="inputEmail3">
                               </div>
                             </div>
                             <div class="row mb-3">
-                              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                              <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
                               <div class="col-sm-7">
                                 <input type="password" class="form-control" id="inputPassword3">
                               </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
+                                <label for="inputAddress" class="col-sm-3 col-form-label">Address</label>
                                 <div class="col-sm-7">
                                   <input type="address" class="form-control" id="inputAddress">
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="inputAddress2" class="col-sm-2 col-form-labe">Address 2</label>
+                                <label for="inputAddress2" class="col-sm-3 col-form-labe">Address 2</label>
                                 <div class="col-sm-7">
-                                    <input type="address2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                    <input type="address2" class="form-control" id="inputAddress2" placeholder="Town or city">
                                 </div>
                             </div> 
                             <div class="col-auto">

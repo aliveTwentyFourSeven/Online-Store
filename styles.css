@@ -9,7 +9,7 @@ body::before {
     }
 }
 .nav-item{
-    padding: 1em;
+    padding: 2em;
 }
 .d-flex{
     position: relative;
